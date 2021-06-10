@@ -1,0 +1,29 @@
+{
+  "name": "test01",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "eunsol",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-session": "^1.17.1",
+    "help": "^3.0.2",
+    "mariadb": "^2.5.3",
+    "mysql": "^2.18.1",
+    "socket.io": "^4.0.0",
+    "supervisor": "^0.12.0"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JOEUNSOL/nodejs.git"
+  },
+  "bugs": {
+    "url": "https://github.com/JOEUNSOL/nodejs/issues"
+  },
+  "homepage": "https://github.com/JOEUNSOL/nodejs#readme",
+  "description": ""
+}

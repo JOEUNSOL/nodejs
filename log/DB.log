@@ -1,0 +1,24 @@
+run...
+{ id: 'sad', password: 'sad' }
+[
+  meta: [
+    ColumnDef {
+      _parse: [StringParser],
+      collation: [Collation],
+      columnLength: 40,
+      columnType: 253,
+      flags: 20483,
+      scale: 0,
+      type: 'VAR_STRING'
+    },
+    ColumnDef {
+      _parse: [StringParser],
+      collation: [Collation],
+      columnLength: 80,
+      columnType: 253,
+      flags: 4097,
+      scale: 0,
+      type: 'VAR_STRING'
+    }
+  ]
+]

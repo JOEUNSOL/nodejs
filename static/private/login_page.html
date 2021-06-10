@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="../css/chatting.css">
+  <script src="/socket.io/socket.io.js"></script>
+  <title>Document</title>
+</head>
+
+<body>
+  <form action="">
+    <input type="text" id="msg"><button type="submit">send</button>
+  </form>
+
+
+</body>
+<script>
+  const socket = io()
+
+
+
+  socket.on('connect', function() {
+    let input = document.getElementById('msg')
+    console.log('접속됨')
+    input.value = "접속됨"
+  })
+
+  function send() {
+    let message = document.getElementById('test').value;
+    // console.log(message + "메세지")
+    console.log(document.getElementById('test').value)
+    document.getElementById('test').value = ''
+
+    socket.emit('send', {
+      msg: message
+    })
+  }
+</script>
+
+</html>
